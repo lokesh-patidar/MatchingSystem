@@ -34,7 +34,6 @@ sellerRouter.post("/addmany", async (req, res) => {
   try {
     await SellerModel.insertMany(payload);
     res.send({ Message: "All sellers added successfully!" });
-    console.log(product);
   } catch (err) {
     console.log(err);
     res.send({ Message: "All sellers can't be added!" });

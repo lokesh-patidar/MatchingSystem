@@ -5,7 +5,7 @@ const sellerSchema = mongoose.Schema({
   SellerPrice: { type: Number, required: true }
 });
 
-const SellerModel = mongoose.model("users", sellerSchema);
+const SellerModel = mongoose.model("sellersData", sellerSchema);
 
 module.exports = {
   SellerModel

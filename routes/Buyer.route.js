@@ -6,9 +6,7 @@ require('dotenv').config();
 const buyerRouter = express.Router();
 
 buyerRouter.post("/add", async (req, res) => {
-
     const { BuyerQty, BuyerPrice } = req.body;
-
     try {
         let buyer = new BuyerModel({ BuyerQty, BuyerPrice });
         await buyer.save();

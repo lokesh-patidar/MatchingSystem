@@ -10,8 +10,8 @@ app.use(cors({
     origin: "*"
 }));
 
-app.get("/", (req,res) => {
-    res.send({Message: "Welcome to Matching System Backend"});
+app.get("/", (req, res) => {
+    res.send({ Message: "Welcome to Matching System Backend" });
 });
 
 app.use("/buyer", buyerRouter);

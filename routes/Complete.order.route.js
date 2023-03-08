@@ -54,7 +54,7 @@ completeOrderRouter.delete("/deletemany", async (req, res) => {
 completeOrderRouter.post("/add", async (req, res) => {
   const payload = req.body;
   try {
-    const data = new SellerModel(payload);
+    const data = new CompleteOrderModel(payload);
     await data.save();
     res.send({ Message: "Complete order added successfully!" });
     console.log(data);

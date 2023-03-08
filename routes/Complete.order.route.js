@@ -1,9 +1,9 @@
 const express = require("express");
 const { CompleteOrderModel } = require("../models/Complete.order.model");
-const CompleteOrderRouter = express.Router();
+const completeOrderRouter = express.Router();
 
 
-CompleteOrderRouter.get("/", async (req, res) => {
+completeOrderRouter.get("/", async (req, res) => {
   try {
     const Item = await CompleteOrderModel.find();
     res.send(Item);
@@ -14,7 +14,7 @@ CompleteOrderRouter.get("/", async (req, res) => {
   }
 });
 
-CompleteOrderRouter.patch("/update/:id", async (req, res) => {
+completeOrderRouter.patch("/update/:id", async (req, res) => {
   const payload = req.body;
   const id = req.params.id;
 
@@ -29,7 +29,7 @@ CompleteOrderRouter.patch("/update/:id", async (req, res) => {
 
 
 // Insert many
-CompleteOrderRouter.post("/addmany", async (req, res) => {
+completeOrderRouter.post("/addmany", async (req, res) => {
   const payload = req.body;
   try {
     await CompleteOrderModel.insertMany(payload);
@@ -41,7 +41,7 @@ CompleteOrderRouter.post("/addmany", async (req, res) => {
 });
 
 // All product delete
-CompleteOrderRouter.delete("/deletemany", async (req, res) => {
+completeOrderRouter.delete("/deletemany", async (req, res) => {
   try {
     await CompleteOrderModel.deleteMany();
     res.send({ Message: "All complete order item deleted!" });
@@ -51,20 +51,20 @@ CompleteOrderRouter.delete("/deletemany", async (req, res) => {
   }
 });
 
-CompleteOrderRouter.post("/add", async (req, res) => {
+completeOrderRouter.post("/add", async (req, res) => {
   const payload = req.body;
   try {
     const data = new SellerModel(payload);
     await data.save();
-    res.send({ Message: "Seller added successfully!" });
+    res.send({ Message: "Complete order added successfully!" });
     console.log(data);
   } catch (err) {
     console.log(err);
-    res.send({ Message: "Seller can not be added!" });
+    res.send({ Message: "Complete order can not be added!" });
   }
 });
 
-CompleteOrderRouter.delete("/delete/:id", async (req, res) => {
+completeOrderRouter.delete("/delete/:id", async (req, res) => {
   const id = req.params.id;
 
   try {
@@ -76,4 +76,4 @@ CompleteOrderRouter.delete("/delete/:id", async (req, res) => {
   }
 });
 
-module.exports = { CompleteOrderRouter };
+module.exports = { completeOrderRouter };

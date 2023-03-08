@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
 const sellerSchema = mongoose.Schema({
-  SellerQty: Number,
-  SellerPrice: Number
+  SellerQty: { type: Number, required: true },
+  SellerPrice: { type: Number, required: true }
 });
 
 const SellerModel = mongoose.model("users", sellerSchema);

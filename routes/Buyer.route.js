@@ -16,7 +16,7 @@ buyerRouter.post("/add", async (req, res) => {
         console.log(buyer);
     }
     catch (err) {
-        res.send({ Message: "Admin Registration Failed!" });
+        res.send({ Message: "Buyer add Failed!" });
         console.log(err);
     }
 });
@@ -28,7 +28,7 @@ buyerRouter.get("/", async (req, res) => {
         res.send(buyer);
     }
     catch (err) {
-        res.send({ Message: "Can not get users data!" });
+        res.send({ Message: "Can not get buyers data!" });
         console.log(err);
     }
 });

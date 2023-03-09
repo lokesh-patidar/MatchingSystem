@@ -1,8 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const { connection } = require("./config/db");
-const { buyerRouter } = require("./routes/Buyer.route");
-const { sellerRouter } = require("./routes/Seller.route");
 const { completeOrderRouter } = require("./routes/Complete.order.route");
 const { pendingOrderRouter } = require("./routes/Pending.order.route");
 
@@ -16,8 +14,6 @@ app.get("/", (req, res) => {
     res.send({ Message: "Welcome to Matching System Backend" });
 });
 
-app.use("/buyer", buyerRouter);
-app.use("/seller", sellerRouter);
 app.use("/complete", completeOrderRouter);
 app.use("/pending", pendingOrderRouter);
 

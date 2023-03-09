@@ -6,7 +6,8 @@ pendingOrderRouter.get("/", async (req, res) => {
   try {
     const Item = await PendingOrderModel.find();
     res.send(Item);
-  } catch (err) {
+  } 
+  catch (err) {
     console.log(err);
     res.send({ Message: "Can't find pending order data!" });
   }

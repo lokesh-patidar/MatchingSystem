@@ -2,13 +2,11 @@ const express = require("express");
 const { PendingOrderModel } = require("../models/Pending.order.model");
 const pendingOrderRouter = express.Router();
 
-
 pendingOrderRouter.get("/", async (req, res) => {
   try {
     const Item = await PendingOrderModel.find();
     res.send(Item);
-  }
-  catch (err) {
+  } catch (err) {
     console.log(err);
     res.send({ Message: "Can't find pending order data!" });
   }
@@ -26,7 +24,6 @@ pendingOrderRouter.patch("/update/:id", async (req, res) => {
     res.send({ Message: "pending data can't be updated!" });
   }
 });
-
 
 // Insert many
 pendingOrderRouter.post("/addmany", async (req, res) => {

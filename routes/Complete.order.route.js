@@ -1,5 +1,5 @@
 const express = require("express");
-const { CompleteOrderModel } = require("../models/Complete.order.model");
+const { CompleteOrderModel } = require("../models/CompleteOrder.model");
 const completeOrderRouter = express.Router();
 
 

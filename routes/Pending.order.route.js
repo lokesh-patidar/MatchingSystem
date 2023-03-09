@@ -1,12 +1,12 @@
 const express = require("express");
-const { PendingOrderModel } = require("../models/Pending.order.model");
+const { PendingOrderModel } = require("../models/PendingOrder.model");
 const pendingOrderRouter = express.Router();
 
 pendingOrderRouter.get("/", async (req, res) => {
   try {
     const Item = await PendingOrderModel.find();
     res.send(Item);
-  } 
+  }
   catch (err) {
     console.log(err);
     res.send({ Message: "Can't find pending order data!" });

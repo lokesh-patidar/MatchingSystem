@@ -3,6 +3,7 @@ const cors = require("cors");
 const { connection } = require("./config/db");
 const { completeOrderRouter } = require("./routes/Complete.order.route");
 const { pendingOrderRouter } = require("./routes/Pending.order.route");
+const { barterFirstRouter } = require("./routes/Barter_first.route");
 
 const app = express();
 app.use(express.json());
@@ -16,6 +17,7 @@ app.get("/", (req, res) => {
 
 app.use("/complete", completeOrderRouter);
 app.use("/pending", pendingOrderRouter);
+app.use("/barter", barterFirstRouter);
 
 app.listen(process.env.port, async () => {
     try {

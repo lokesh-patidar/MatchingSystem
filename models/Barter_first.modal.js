@@ -13,6 +13,7 @@ const BarterSchema = mongoose.Schema({
     offeredProductValue: String,
     isAccepeted: Boolean,
     note: String,
+    isReceived: Boolean,
     offeredProductCondition: String,
 });
 

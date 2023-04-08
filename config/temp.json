@@ -12,6 +12,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     },
     {
@@ -27,6 +28,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     },
     {
@@ -42,6 +44,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": false,
         "offeredProductCondition": "Good"
     },
     {
@@ -57,6 +60,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     },
     {
@@ -72,6 +76,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     },
     {
@@ -87,6 +92,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": false,
         "offeredProductCondition": "Good"
     },
     {
@@ -102,6 +108,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     },
     {
@@ -117,6 +124,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     },
     {
@@ -132,6 +140,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     },
     {
@@ -147,6 +156,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": false,
         "offeredProductCondition": "Good"
     },
     {
@@ -162,6 +172,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     },
     {
@@ -177,6 +188,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": false,
         "offeredProductCondition": "Good"
     },
     {
@@ -192,6 +204,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     },
     {
@@ -207,6 +220,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     },
     {
@@ -222,6 +236,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     },
     {
@@ -237,6 +252,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": false,
         "offeredProductCondition": "Good"
     },
     {
@@ -252,6 +268,7 @@
         "offeredProductValue": "$80-$120",
         "isAccepeted": "false",
         "note": "Hi, I liked this product, I have an Mouse, I would like to exchange with this",
+        "isReceived": true,
         "offeredProductCondition": "Good"
     }
 ]
